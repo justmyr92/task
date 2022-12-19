@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section.main {
+    width: 100%;
+    height: 100vh;
+    background: #f1f6f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main .container {
+    border-radius: 20px;
+    border: 1px solid #472183;
+    padding: 25px 20px;
+    background-color: #fff;
+    box-shadow: 0.8rem 0.8rem #472183;
+    width: 500px;
+    transition: all 0.3s ease-in-out;
+}
+section.main .container:hover {
+    box-shadow: 0.5rem 0.5rem #472183;
+}
+
+section.main .container .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+section.main .container .header .title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4b56d2;
+}
+
+section.main .container .header button {
+    background-color: #4b56d2;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section.main .container .task-container {
+    max-height: 50vh;
+    overflow: auto;
+}
+section.main .container .task {
+    background-color: #f1f6f5;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.main .container .task button {
+    background: none;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    width: 35px;
+    height: 30px;
+    color: #ff0000;
+    font-size: 20px;
+}
+section.main .container .task h3 {
+    font-family: "Poppins", sans-serif;
+}
+section.main .container .task p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+}
+
+form.add-task {
+    border: 1px solid #4b56d2;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form .form-control {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px;
+}
+
+form label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+form .row {
+    display: flex;
+}
+form .row .form-control {
+    width: 50%;
+}
+form input {
+    border: 1px solid #4b56d2;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+.submitBtn {
+    display: block;
+    width: 95.5%;
+    margin: 0 10px;
+}
