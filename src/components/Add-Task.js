@@ -6,8 +6,14 @@ const AddTask = ({ onAdd }) => {
     const [time, setTime] = useState("");
     const onSubmit = (e) => {
         e.preventDefault();
-        //
-        onAdd({ text, day, time });
+        //time format from yyyy-mm-dd to full date but get only month name, day and year
+
+        const new_day = new Date(day).toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+        });
+        onAdd({ text, new_day, time });
         setText("");
         setday("");
         setTime("");

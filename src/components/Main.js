@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import AddTask from "./addTask";
+import AddTask from "./Add-Task";
 import EmptyTask from "./Empty-Task";
 import Header from "./Header";
 import Tasks from "./Tasks";
