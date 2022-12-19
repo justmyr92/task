@@ -20,7 +20,7 @@ section.main .container {
     padding: 25px 20px;
     background-color: #fff;
     box-shadow: 0.8rem 0.8rem #472183;
-    width: 400px;
+    width: 300px;
     transition: all 0.3s ease-in-out;
 }
 section.main .container:hover {
@@ -84,10 +84,9 @@ section.main .container .task p {
 
 form.add-task {
     border: 1px solid #4b56d2;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 10px;
     width: 100%;
-    border-radius: 20px;
 }
 
 form .form-control {
@@ -101,12 +100,6 @@ form label {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
-form .row {
-    display: flex;
-}
-form .row .form-control {
-    width: 50%;
-}
 form input {
     border: 1px solid #4b56d2;
     font-family: "Poppins", sans-serif;
@@ -115,7 +108,14 @@ form input {
 }
 
 .submitBtn {
-    display: block;
-    width: 95.5%;
-    margin: 0 10px;
+    background-color: #4b56d2;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0 0 10px;
 }
